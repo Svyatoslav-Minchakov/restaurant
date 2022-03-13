@@ -1,0 +1,128 @@
+.hero {
+  background-image: url("../images/hero/hero-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+
+  .container {
+    max-width: 448px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+
+  .text {
+    color: white;
+  }
+}
+
+.subtittle {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #f7f7f7;
+  margin-bottom: 10px;
+}
+
+.tittle {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  margin-bottom: 60px;
+  color: #f7f7f7;
+}
+
+.hero__link-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero__link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  color: #fa4a0c;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  text-decoration: none;
+  width: 236px;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #f7f7f7;
+    background-color: rgba(250, 74, 12, 1);
+    transition: 250ms linear;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    .container {
+      min-width: 720px;
+    }
+
+    .subtittle {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+      letter-spacing: 0.1px;
+    }
+
+    .tittle {
+      font-weight: bold;
+      font-size: 58px;
+      line-height: 80px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #ffffff;
+    }
+
+    .text {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 38px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #f7f7f7;
+    }
+
+    .hero__link {
+      margin-bottom: 0;
+      &:not(:last-child) {
+        margin-right: 67px;
+      }
+    }
+  }
+}

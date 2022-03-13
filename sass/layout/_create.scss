@@ -1,0 +1,136 @@
+.create {
+  .container {
+    max-width: 448px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+}
+.advantages {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  color: #000000;
+  opacity: 0.8;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtittle {
+  color: #fa4a0c;
+}
+
+.text {
+  color: #737373;
+}
+
+.create__img {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.container > .advantages {
+  order: -2;
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .create .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container > .advantages {
+    order: -2;
+  }
+
+  .create__right-side {
+    order: -1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .create {
+    .container {
+      padding-top: 130px;
+      max-width: 738px;
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+    }
+
+    .advantages {
+      font-size: 24px;
+      max-width: 400px;
+    }
+
+    .text {
+      font-size: 20px;
+      text-align: right;
+      max-width: 400px;
+    }
+
+    .subtittle {
+      font-size: 20px;
+      margin-bottom: 30px;
+      text-align: right;
+    }
+  }
+
+  .create__right-side {
+    padding-top: 100px;
+  }
+
+  .container > .advantages {
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%, -200%);
+  }
+
+  .subtittle + .advantages {
+    margin-bottom: 20px;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .create {
+    .container {
+      max-width: 1200px;
+      padding-left: 15px;
+      padding-right: 15px;
+      justify-content: space-between;
+    }
+
+    .advantages {
+      text-align: left;
+      font-size: 40px;
+      max-width: 100%;
+    }
+
+    .text {
+      text-align: left;
+      font-size: 24px;
+      max-width: 100%;
+    }
+
+    .subtittle {
+      text-align: left;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .create__right-side {
+    max-width: 668px;
+    padding-top: 100px;
+  }
+
+  .create__left-side {
+    padding-left: 100px;
+  }
+}
